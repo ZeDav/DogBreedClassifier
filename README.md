@@ -1,5 +1,5 @@
 # DogBreedClassifier
-Possible solution of the Udacity Data Science Nanodegree Capstone Project : Use Concolutional Neural Networks to classify dog breed in images
+Possible solution of the Udacity Data Science Nanodegree Capstone Project : Use Concolutional Neural Networks to classify dog breed in images. The following sections are cloned from [Udacidy](https://www.udacity.com/course/data-scientist-nanodegree--nd025?utm_source=gsem_brand&utm_medium=ads_r&utm_campaign=19167921312_c_individuals&utm_term=143524475679&utm_keyword=udacity%20data%20scientist_e&gclid=EAIaIQobChMIk5ylxsDr_wIVl5SDBx1lhAo7EAAYASAAEgLZEfD_BwE) and modified for the implemented DogBreedClassifier in this repository.
 [//]: # (Image References)
 
 [image1]: ./images/sample_dog_output.png "Sample Output"
@@ -21,15 +21,15 @@ Along with exploring state-of-the-art CNN models for classification, you will ma
 
 1. Clone the repository and navigate to the downloaded folder.
 ```	
-git clone https://github.com/udacity/dog-project.git
-cd dog-project
+git clone https://github.com/udacity/dog_app.git
+cd DogBreedClassifier
 ```
 
-2. Download the [dog dataset](https://s3-us-west-1.amazonaws.com/udacity-aind/dog-project/dogImages.zip).  Unzip the folder and place it in the repo, at location `path/to/dog-project/dogImages`. 
+2. Download the [dog dataset](https://s3-us-west-1.amazonaws.com/udacity-aind/dog-project/dogImages.zip).  Unzip the folder and place it in the repo, at location `path/to/DogBreedClassifier/dogImages`. 
 
-3. Download the [human dataset](https://s3-us-west-1.amazonaws.com/udacity-aind/dog-project/lfw.zip).  Unzip the folder and place it in the repo, at location `path/to/dog-project/lfw`.  If you are using a Windows machine, you are encouraged to use [7zip](http://www.7-zip.org/) to extract the folder. 
+3. Download the [human dataset](https://s3-us-west-1.amazonaws.com/udacity-aind/dog-project/lfw.zip).  Unzip the folder and place it in the repo, at location `path/to/DogBreedClassifiert/lfw`.  If you are using a Windows machine, you are encouraged to use [7zip](http://www.7-zip.org/) to extract the folder. 
 
-4. Download the [VGG-16 bottleneck features](https://s3-us-west-1.amazonaws.com/udacity-aind/dog-project/DogVGG16Data.npz) for the dog dataset.  Place it in the repo, at location `path/to/dog-project/bottleneck_features`.
+4. Download the [VGG-16 bottleneck features](https://s3-us-west-1.amazonaws.com/udacity-aind/dog-project/DogVGG16Data.npz) for the dog dataset.  Place it in the repo, at location `path/to/DogBreedClassifier/bottleneck_features`.
 
 5. (Optional) __If you plan to install TensorFlow with GPU support on your local machine__, follow [the guide](https://www.tensorflow.org/install/) to install the necessary NVIDIA software on your system.  If you are using an EC2 GPU instance, you can skip this step.
 
@@ -38,12 +38,12 @@ cd dog-project
 	- __Linux__ (to install with __GPU support__, change `requirements/dog-linux.yml` to `requirements/dog-linux-gpu.yml`): 
 	```
 	conda env create -f requirements/dog-linux.yml
-	source activate dog-project
+	source activate DogBreedClassifier
 	```  
 	- __Mac__ (to install with __GPU support__, change `requirements/dog-mac.yml` to `requirements/dog-mac-gpu.yml`): 
 	```
 	conda env create -f requirements/dog-mac.yml
-	source activate dog-project
+	source activate DogBreedClassifier
 	```  
 	**NOTE:** Some Mac users may need to install a different version of OpenCV
 	```
@@ -52,7 +52,7 @@ cd dog-project
 	- __Windows__ (to install with __GPU support__, change `requirements/dog-windows.yml` to `requirements/dog-windows-gpu.yml`):  
 	```
 	conda env create -f requirements/dog-windows.yml
-	activate dog-project
+	activate DogBreedClassifier
 	```
 
 7. (Optional) **If you are running the project on your local machine (and not using AWS)** and Step 6 throws errors, try this __alternative__ step to create your environment.
@@ -60,7 +60,7 @@ cd dog-project
 	- __Linux__ or __Mac__ (to install with __GPU support__, change `requirements/requirements.txt` to `requirements/requirements-gpu.txt`): 
 	```
 	conda create --name dog-project python=3.5
-	source activate dog-project
+	source activate DogBreedClassifier
 	pip install -r requirements/requirements.txt
 	```
 	**NOTE:** Some Mac users may need to install a different version of OpenCV
@@ -69,8 +69,8 @@ cd dog-project
 	```
 	- __Windows__ (to install with __GPU support__, change `requirements/requirements.txt` to `requirements/requirements-gpu.txt`):  
 	```
-	conda create --name dog-project python=3.5
-	activate dog-project
+	conda create --name DogBreedClassifier python=3.5
+	activate DogBreedClassifier
 	pip install -r requirements/requirements.txt
 	```
 	
@@ -92,7 +92,7 @@ sudo python3 -m pip install -r requirements/requirements-gpu.txt
 
 10. (Optional) **If you are running the project on your local machine (and not using AWS)**, create an [IPython kernel](http://ipython.readthedocs.io/en/stable/install/kernel_install.html) for the `dog-project` environment. 
 ```
-python -m ipykernel install --user --name dog-project --display-name "dog-project"
+python -m ipykernel install --user --name DogBreedClassifier --display-name "DogBreedClassifier"
 ```
 
 11. Open the notebook.
